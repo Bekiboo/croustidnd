@@ -1,0 +1,155 @@
+@import 'tailwindcss';
+
+/* Styles globaux pour l'application CroustiDnD */
+body {
+	font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+	overflow: hidden; /* Évite le scroll sur le body */
+}
+
+/* Assure le défilement dans le panneau de contenu */
+.content-scrollable {
+	height: 100%;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+/* Styles pour le notch de navigation mobile */
+.notch-tab {
+	background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+	box-shadow: 2px 0 8px rgba(0, 0, 0, 0.15);
+	transition: all 0.2s ease-in-out;
+}
+
+.notch-tab:hover {
+	background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%);
+	box-shadow: 3px 0 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Animation pour le panneau de navigation mobile */
+.nav-slide-enter {
+	animation: slideInLeft 0.3s ease-out;
+}
+
+.nav-slide-exit {
+	animation: slideOutLeft 0.3s ease-in;
+}
+
+@keyframes slideInLeft {
+	from {
+		transform: translateX(-100%);
+		opacity: 0;
+	}
+	to {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+@keyframes slideOutLeft {
+	from {
+		transform: translateX(0);
+		opacity: 1;
+	}
+	to {
+		transform: translateX(-100%);
+		opacity: 0;
+	}
+}
+
+/* Responsive breakpoints personnalisés */
+@media (max-width: 1023px) {
+	/* Sur mobile/tablette, on s'assure que le texte reste lisible */
+	.prose {
+		font-size: 0.875rem;
+		line-height: 1.5;
+	}
+	
+	.prose h1 {
+		font-size: 1.5rem;
+		margin-top: 1.5rem;
+		margin-bottom: 1rem;
+	}
+	
+	.prose h2 {
+		font-size: 1.25rem;
+		margin-top: 1.5rem;
+		margin-bottom: 0.75rem;
+	}
+	
+	.prose h3 {
+		font-size: 1.125rem;
+		margin-top: 1.25rem;
+		margin-bottom: 0.5rem;
+	}
+	
+	/* Zone de drag pour ouvrir le menu */
+	.drag-zone {
+		position: fixed;
+		left: 0;
+		top: 0;
+		bottom: 0;
+		width: 20px;
+		z-index: 30;
+	}
+}
+
+/* Amélioration des scrollbars */
+::-webkit-scrollbar {
+	width: 8px;
+}
+
+::-webkit-scrollbar-track {
+	background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #cbd5e1;
+	border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #94a3b8;
+}
+
+/* Styles pour le contenu markdown */
+.prose h1 {
+	color: #1f2937;
+	font-weight: 700;
+	margin-top: 2rem;
+	margin-bottom: 1.5rem;
+}
+
+.prose h2 {
+	color: #374151;
+	font-weight: 600;
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+	border-bottom: 2px solid #e5e7eb;
+	padding-bottom: 0.5rem;
+}
+
+.prose h3 {
+	color: #4b5563;
+	font-weight: 600;
+	margin-top: 1.5rem;
+	margin-bottom: 0.75rem;
+}
+
+.prose p {
+	line-height: 1.7;
+	margin-bottom: 1rem;
+}
+
+.prose ul {
+	margin-left: 1.5rem;
+	margin-bottom: 1rem;
+}
+
+.prose li {
+	margin-bottom: 0.25rem;
+}
+
+.prose strong {
+	color: #1f2937;
+	font-weight: 600;
+}
