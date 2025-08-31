@@ -1,10 +1,4 @@
-import type { RuleSection } from '../../../types.js';
-
-export const racesCreation: RuleSection = {
-	id: "races-creation",
-	title: "Règles de création",
-	content: `
-# Règles de création des races
+# Règles de Création
 
 ## Étapes de création
 
@@ -37,10 +31,15 @@ export const racesCreation: RuleSection = {
 - **Traits négatifs :** Chétif (+2)
 - **Coût total :** 10 points (7 dépensés, +2 récupérés)
 
+### Mage Gnome
+- **Race :** Gnome (+2 Intelligence, -1 Force)
+- **Attributs achetés :** Inventeur (-3), Résistance magique (-2), Petite taille, grand esprit (-2)
+- **Traits négatifs :** Myope (+2)
+- **Coût total :** 10 points (7 dépensés, +2 récupérés)
+
 ## Conseils de création
-- Pensez au rôle que vous voulez jouer
-- Équilibrez les forces et faiblesses
-- Les traits négatifs peuvent créer des opportunités de roleplay
-- Consultez votre MJ pour valider votre concept
-	`.trim()
-};
+- **Pensez au rôle** que vous voulez jouer dans l'équipe
+- **Équilibrez** les forces et faiblesses pour un personnage intéressant
+- **Les traits négatifs** peuvent créer des opportunités de roleplay
+- **Consultez votre MJ** pour valider votre concept avant de finaliser
+- **Coordonnez** avec les autres joueurs pour une équipe complémentaire

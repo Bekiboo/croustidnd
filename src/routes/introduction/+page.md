@@ -1,9 +1,3 @@
-import type { RuleSection } from '../../../types.js';
-
-export const basics: RuleSection = {
-	id: "introduction-basics",
-	title: "Bases du système",
-	content: `
 # CroustiDnD - Système de Jeu de Rôle
 
 ## Vue d'ensemble
@@ -43,5 +37,3 @@ Pour réussir une action, lancez 1d20 + modificateur de caractéristique :
 - Feuilles de personnage
 - Papier et crayons
 - Une bonne dose d'imagination !
-	`.trim()
-};
