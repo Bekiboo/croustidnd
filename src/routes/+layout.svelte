@@ -15,9 +15,9 @@
 </svelte:head>
 
 {#if showNavigation}
-	<div class="flex h-screen">
+	<div class="flex h-screen lg:flex-row flex-col">
 		<SimpleNavigation />
-		<main class="flex-1 overflow-y-auto">
+		<main class="flex-1 overflow-y-auto lg:pt-0 pt-16">
 			<div class="max-w-4xl mx-auto px-6 py-8 prose prose-lg">
 				{@render children()}
 			</div>
