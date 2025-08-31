@@ -58,7 +58,7 @@
 <ul class="space-y-1">
 	{#each sections as section}
 		<li>
-			{#if section.isChapter}
+			{#if section?.isChapter}
 				<!-- Chapitre : toujours visible, non cliquable -->
 				<div class="px-3 py-2 sm:py-3 text-sm font-bold text-gray-900 uppercase tracking-wide border-b border-gray-200 bg-gray-50 select-none">
 					{section.title}

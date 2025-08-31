@@ -5,113 +5,49 @@ export const attributes: RuleSection = {
 	title: "Caractéristiques",
 	children: [
 		{
-			id: "strength",
-			title: "Force",
+			id: "attributes-description",
+			title: "Description des caractéristiques",
 			content: `
-La Force mesure la puissance physique de votre personnage.
-
-## Utilisations de la Force
-
-- **Attaques au corps à corps** : Ajoutez votre modificateur de Force aux jets d'attaque et de dégâts avec les armes de mêlée
-- **Porter et soulever** : Détermine combien votre personnage peut porter
-- **Escalade et saut** : Tests de Force pour grimper ou sauter
-
-## Calcul du modificateur
-
-Le modificateur de Force = (Score de Force - 10) / 2 (arrondi à l'inférieur)
-
-**Exemples :**
-- Force 8 → Modificateur -1
-- Force 12 → Modificateur +1
-- Force 16 → Modificateur +3
+- **Force** : puissance physique et capacité à porter ou soulever des charges.  
+- **Dextérité** : agilité, coordination et rapidité des réflexes.  
+- **Constitution** : résistance physique, vitalité et endurance.  
+- **Intelligence** : logique, mémoire, connaissances et capacité d’apprentissage.  
+- **Sagesse** : perception, intuition et bon sens.  
+- **Charisme** : force de personnalité, persuasion et influence sociale.  
 			`.trim()
 		},
 		{
-			id: "dexterity",
-			title: "Dextérité",
+			id: "attributes-roll",
+			title: "Tirage des caractéristiques",
 			content: `
-La Dextérité mesure l'agilité, les réflexes et l'équilibre.
+**Méthode de base :**  
+Lancez **12×6d6**. Chaque dé est assigné à une caractéristique selon sa valeur :  
 
-## Utilisations de la Dextérité
+- 1 = Force  
+- 2 = Dextérité  
+- 3 = Constitution  
+- 4 = Intelligence  
+- 5 = Sagesse  
+- 6 = Charisme  
 
-- **Attaques à distance** : Ajoutez votre modificateur de Dextérité aux jets d'attaque avec les armes à distance
-- **Classe d'Armure** : Ajoute à votre CA si vous ne portez pas d'armure lourde
-- **Initiative** : Détermine l'ordre d'action en combat
-- **Discrétion** : Tests pour se cacher et se déplacer silencieusement
+Le total des dés pour chaque chiffre détermine le score de cette caractéristique.  
 
-## Calcul du modificateur
+**Limites :**  
+Une caractéristique ne peut pas dépasser **18**.  
+Si le total excède cette valeur, retirez les dés en trop jusqu’à revenir à 18.  
 
-Le modificateur de Dextérité = (Score de Dextérité - 10) / 2 (arrondi à l'inférieur)
-			`.trim()
-		},
-		{
-			id: "constitution",
-			title: "Constitution",
-			content: `
-La Constitution représente la santé et l'endurance de votre personnage.
+**Jets spéciaux :**  
+Si un lancer de 6d6 donne **6 fois le même chiffre**, vous gagnez immédiatement une **modification supplémentaire**.  
 
-## Utilisations de la Constitution
+**Total fixe :**  
+Ce système génère toujours un total de **72 points répartis** entre les six caractéristiques.  
 
-- **Points de vie** : Ajoutez votre modificateur de Constitution à vos PV à chaque niveau
-- **Concentration** : Tests pour maintenir la concentration sur les sorts
-- **Résistance** : Jets de sauvegarde contre les poisons et maladies
+**Modifications finales :**  
+Après le tirage, le joueur choisit **3 modifications** parmi les options suivantes :  
 
-## Points de vie
-
-À chaque niveau, vous gagnez : DV de classe + modificateur de Constitution
-			`.trim()
-		},
-		{
-			id: "intelligence",
-			title: "Intelligence",
-			content: `
-L'Intelligence mesure la capacité de raisonnement et la mémoire.
-
-## Utilisations de l'Intelligence
-
-- **Sorts** : Les magiciens utilisent l'Intelligence pour leurs sorts
-- **Compétences** : Investigation, Histoire, Arcanes, Religion, Nature
-- **Langues** : Détermine le nombre de langues connues
-
-## Sorts et Intelligence
-
-- **Sorts connus** : Bonus égal au modificateur d'Intelligence
-- **DD des sorts** : 8 + bonus de maîtrise + modificateur d'Intelligence
-			`.trim()
-		},
-		{
-			id: "wisdom",
-			title: "Sagesse",
-			content: `
-La Sagesse reflète l'intuition et la perspicacité.
-
-## Utilisations de la Sagesse
-
-- **Sorts** : Les clercs et druides utilisent la Sagesse pour leurs sorts
-- **Perception** : Remarquer les détails et les dangers
-- **Survie** : Navigation et pistage en milieu naturel
-- **Intuition** : Comprendre les motivations d'autrui
-
-## Jets de sauvegarde
-
-La Sagesse est souvent utilisée pour résister aux effets mentaux.
-			`.trim()
-		},
-		{
-			id: "charisma",
-			title: "Charisme",
-			content: `
-Le Charisme mesure la force de personnalité et le magnétisme.
-
-## Utilisations du Charisme
-
-- **Sorts** : Les bardes, paladins et sorciers utilisent le Charisme
-- **Interactions sociales** : Persuasion, Tromperie, Intimidation
-- **Leadership** : Commander et inspirer les autres
-
-## Influence sociale
-
-Le Charisme détermine votre capacité à influencer les PNJ et à mener un groupe.
+- **+2 et -2** dans deux caractéristiques différentes  
+- **+1** dans une caractéristique  
+- **Échanger** deux caractéristiques  
 			`.trim()
 		}
 	]
