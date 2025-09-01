@@ -1,5 +1,5 @@
 // Auto-generated search index - do not edit manually
-// Generated on 2025-08-31T18:57:53.774Z
+// Generated on 2025-08-31T19:17:24.854Z
 
 export interface SearchIndexItem {
 	title: string;

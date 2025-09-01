@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { search, type SearchResult } from '$lib/utils/search.js';
-	import { goto } from '$app/navigation';
 	
 	let searchQuery = $state('');
 	let searchResults = $state<SearchResult[]>([]);
@@ -26,8 +25,13 @@
 	}
 	
 	function selectResult(result: SearchResult) {
-		const url = result.anchor ? `${result.url}#${result.anchor}` : result.url;
-		goto(url);
+		if (result.anchor) {
+			// For anchor links, use native navigation to the page with hash
+			window.location.href = `${result.url}#${result.anchor}`;
+		} else {
+			// For regular page navigation, use native navigation
+			window.location.href = result.url;
+		}
 		searchQuery = '';
 		isOpen = false;
 		searchInput?.blur();

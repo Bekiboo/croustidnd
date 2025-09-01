@@ -74,7 +74,14 @@
 
 <!-- Mobile Menu Overlay -->
 {#if mobileMenuOpen}
-	<div class="lg:hidden fixed inset-0 z-50 bg-black bg-opacity-50" onclick={closeMobileMenu}></div>
+	<div 
+		class="lg:hidden fixed inset-0 z-50 bg-black bg-opacity-50" 
+		onclick={closeMobileMenu}
+		onkeydown={(e) => e.key === 'Escape' && closeMobileMenu()}
+		role="button"
+		tabindex="-1"
+		aria-label="Fermer le menu"
+	></div>
 {/if}
 
 <!-- Navigation Sidebar -->
@@ -91,7 +98,7 @@
 		
 		<!-- Mobile close button -->
 		<div class="lg:hidden flex items-center justify-between mb-6">
-			<a href="/" class="text-xl font-bold text-gray-900" onclick={closeMobileMenu}>CroustiDnD</a>
+			<a href="/" class="text-xl font-bold text-gray-900">CroustiDnD</a>
 			<button
 				onclick={closeMobileMenu}
 				class="p-2 rounded-md text-gray-600 hover:bg-gray-100 touch-manipulation"
