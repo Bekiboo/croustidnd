@@ -1,66 +1,111 @@
-# Compétences
+# Compétences, Métiers et Langues
 
-Les compétences représentent les domaines d'expertise de votre personnage. Elles déterminent votre efficacité dans diverses situations non-combatives.
+## Compétences (Skills)
 
-## Liste des compétences
+Votre **Background** vous donne **5 points de Compétence de base**.  
+Ajoutez ou soustrayez votre modificateur **d’Intelligence** à ce total :  
+**Points de départ = 5 + Mod. d’Intelligence**  (un score d’Intelligence négatif réduit vos points).    
+Vous gagnez **1 point de Compétence supplémentaire tout les niveaux pairs**.
 
-### Compétences physiques
-- **Athlétisme** (Force) : Escalade, saut, nage, course
-- **Acrobaties** (Dextérité) : Équilibre, contorsions, cascades
-- **Discrétion** (Dextérité) : Se cacher, se déplacer silencieusement
+Les points de Compétence permettent d’augmenter vos **niveaux de compétence** dans la liste (Athlétisme, Survie, Persuasion, etc.).  
+Chaque compétence progresse selon les **paliers DC20** :
 
-### Compétences mentales
-- **Arcanes** (Intelligence) : Connaissances magiques et mystiques
-- **Histoire** (Intelligence) : Événements passés, civilisations
-- **Investigation** (Intelligence) : Déduction, analyse d'indices
-- **Nature** (Intelligence) : Faune, flore, géographie
-- **Religion** (Intelligence) : Divinités, plans, créatures sacrées
+- **+0 :** Non entraîné  
+- **+2 :** Entraîné  
+- **+4 :** Expert  
+- **+6 :** Maître  
+- **+8 :** Légendaire  
+- **+10 :** Mythique 
 
-### Compétences sociales
-- **Tromperie** (Charisme) : Mensonge, bluff, déguisement
-- **Intimidation** (Charisme) : Effrayer, menacer
-- **Persuasion** (Charisme) : Convaincre, négocier
-- **Représentation** (Charisme) : Arts, spectacle, divertissement
+### Compétences composites
+Certaines compétences dépendent de **deux caractéristiques**.  
+Dans ce cas :  
 
-### Compétences de sagesse
-- **Empathie** (Sagesse) : Lire les intentions, comprendre les motivations
-- **Médecine** (Sagesse) : Soins, diagnostic, premiers secours
-- **Perception** (Sagesse) : Observer, entendre, détecter
-- **Survie** (Sagesse) : Pistage, orientation, vie sauvage
+**Bonus = meilleur des deux modificateurs + moitié (arrondie à l’inférieur) du second modificateur.**
 
-### Compétences techniques
-- **Artisanat** (Intelligence/Dextérité) : Création d'objets, réparations
-- **Crochetage** (Dextérité) : Serrures, pièges, mécanismes
-- **Escamotage** (Dextérité) : Vol à la tire, prestidigitation
+Exemple 1 : **Intimidation (Cha + For)**  
+- For +3, Cha +1 → bonus = 3 + 0 = **+3**
 
-## Utilisation des compétences
+Exemple 2 : **Détection (Sag + Int)**  
+- Sag +2, Int +3 → bonus = 3 + 1 = **+4**
 
-### Tests de compétence
-**1d20 + modificateur de caractéristique + bonus de maîtrise (si applicable)**
+---
 
-### Bonus de maîtrise
-- **Niveau 1-4** : +2
-- **Niveau 5-8** : +3
-- **Niveau 9-12** : +4
-- **Niveau 13-16** : +5
-- **Niveau 17-20** : +6
+## Compétences physiques (action & mouvement)
 
-### Difficulté des tests
-- **Très facile** : DC 5
-- **Facile** : DC 10
-- **Moyen** : DC 15
-- **Difficile** : DC 20
-- **Très difficile** : DC 25
-- **Quasi impossible** : DC 30
+| Compétence                  | Caractéristiques | Description courte |
+|------------------------------|-----------------|-----------------|
+| Athlétisme                   | For + Dex       | Sauts, escalade, nage, force combinée à l’agilité |
+| Acrobaties                   | Dex             | Équilibre, roulades, acrobaties |
+| Discrétion                   | Dex             | Se cacher ou passer inaperçu |
+| Escamotage / Subterfuge      | Dex + Cha       | Pickpocket, cacher ou manipuler un objet furtivement |
 
-## Acquisition des compétences
+---
 
-### À la création
-- **Classe** : 2-4 compétences selon la classe choisie
-- **Race** : Certaines races donnent des compétences bonus
-- **Background** : 2 compétences liées à votre histoire
+## Compétences sociales (interaction et influence)
 
-### En progression
-- **Talents** : Certains talents donnent accès à de nouvelles compétences
-- **Multiclassage** : Obtenir des niveaux dans une autre classe
-- **Entraînement** : Temps d'arrêt pour apprendre (optionnel)
+| Compétence                  | Caractéristiques | Description courte |
+|------------------------------|-----------------|-----------------|
+| Intimidation                 | Cha + For       | Menaces verbales ou physiques |
+| Persuasion                   | Cha + Int       | Convaincre par éloquence et logique |
+| Tromperie                    | Cha             | Bluff et mensonge |
+| Animal                       | Sag + Cha       | Comprendre ou calmer un animal |
+
+---
+
+## Compétences de perception et survie (exploration & analyse)
+
+| Compétence                  | Caractéristiques | Description courte |
+|------------------------------|-----------------|-----------------|
+| Détection                    | Sag + Int       | Remarquer détails, pièges, indices |
+| Psychologie / Perspicacité   | Sag + Int       | Lire émotions et intentions |
+| Survie                       | Int + Sag       | Orientation, chasse, pièges |
+| Médecine                     | Int + Sag       | Diagnostic et soins d’urgence |
+
+---
+
+## Compétences intellectuelles (magie & connaissances)
+
+| Compétence                  | Caractéristiques | Description courte |
+|------------------------------|-----------------|-----------------|
+| Concentration                | Con             | Maintenir un sort ou résister à la distraction |
+| Investigation                | Int             | Analyse logique et recherche d’indices |
+| Art de la magie              | Int + Sag ou Cha| Identifier et analyser la magie |
+| Connaissances                | Int             | Arcanes, Histoire, Religion, Nature… |
+
+---
+
+## Métiers
+
+- Votre **Background** vous donne **3 points de Métier**.  
+- Vous pouvez **convertir 1 point de Compétence en 2 points de Métier** (pas l’inverse).  
+- A la création, vous pouvez dépasser le premier palier (Entraîné) d’un métier jusqu’à **Expert (+4)** maximum, mais cela vous coûtera 3 points de métier au lieu de 2.
+- Chaque Métier représente un savoir-faire pratique ou un art :  
+  - Forgeron, Herboriste, Cartographe, Cuisinier, Tailleur, Navigateur, Alchimiste, Faussaire… 
+  - Musique, Danse, Théatre, Sculpture, calligraphie… 
+- Les Métiers permettent de **créer, réparer ou improviser des objets**, et peuvent fournir des **avantages narratifs ou tests alternatifs**.  
+
+---
+
+## Langues
+
+- Votre **Background** vous donne la maîtrise de la **Langue Commune**.  
+- Dépensez vos points de Langue pour apprendre d’autres langues (parlées ou écrites).  
+- Vous pouvez **convertir 1 point de Métier en 2 points de Langue**.  
+- Le MJ détermine les langues disponibles selon le monde de campagne.  
+- Certaines langues rares ou magiques peuvent coûter plus de points ou être restreintes.
+
+---
+
+## Table de Difficulté (DD)
+
+Le MJ fixe le DD d’une tâche selon sa difficulté. Pour réussir, le joueur doit faire un **jet de compétence + modificateurs ≥ DD**.
+
+| Difficulté       | Description courte                                     | DD suggéré |
+|-----------------|--------------------------------------------------------|------------|
+| Très Facile      | Tâche triviale                                        | 5          |
+| Facile           | Tâche simple                                          | 10         |
+| Moyenne          | Tâche standard                                        | 15         |
+| Difficile        | Tâche complexe                                        | 20         |
+| Très Difficile   | Tâche exigeante, seule l’expertise aide              | 25         |
+| Épique           | Presque impossible, nécessite expérience ou chance   | 30         |

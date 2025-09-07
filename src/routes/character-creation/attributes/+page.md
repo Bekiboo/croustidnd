@@ -34,6 +34,18 @@ Détermine la force de personnalité et l'influence sociale.
 - **Utilisée pour** : Négociation, leadership, sorts de barde
 - **Exemples de tests** : Persuasion, intimidation, représentation
 
+## Caractéristiques et leurs effets
+
+| Caractéristique | Abréviation | Effets principaux | Utilisation principale |
+|-----------------|------------|-----------------|----------------------|
+| Force           | FOR        | Modificateur aux jets d’attaque au corps à corps, dégâts en mêlée, tests de force (Athlétisme, charges) | Attaques au CaC, tests physiques lourds |
+| Dextérité       | DEX        | Modificateur aux jets d’attaque à distance, bonus de CA (limité par armure), tests d’Acrobaties et Discrétion | Attaques à distance, esquive, réflexes, mouvement |
+| Constitution    | CON        | Bonus aux points de vie par niveau, jets de concentration, résistance aux poisons et maladies | PV, résistance aux effets physiques |
+| Intelligence    | INT        | Bonus aux points de compétence, tests de connaissances et artisanat | Compétences, métiers, magie basée sur l’intellect |
+| Sagesse         | SAG        | Bonus à la Perception, Survie, Médecine et perspicacité, jets de sauvegarde contre certains effets | Sens, intuition, magie divine ou spirituelle |
+| Charisme        | CHA        | Influence les tests sociaux (Persuasion, Intimidation, Tromperie) et certaines magies | Interaction sociale, sorts de charme ou enchantement |
+
+
 ## Génération des caractéristiques
 
 ### Méthode 1 : Répartition de points
