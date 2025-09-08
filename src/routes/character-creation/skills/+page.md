@@ -71,7 +71,7 @@ Exemple 2 : **Détection (Sag + Int)**
 | Concentration                | Con             | Maintenir un sort ou résister à la distraction |
 | Investigation                | Int             | Analyse logique et recherche d’indices |
 | Art de la magie              | Int + Sag ou Cha| Identifier et analyser la magie |
-| Connaissances                | Int             | Arcanes, Histoire, Religion, Nature… |
+| Erudition                    | Int             | Recherche et mémorisation de connaissances |
 
 ---
 
@@ -94,6 +94,25 @@ Exemple 2 : **Détection (Sag + Int)**
 - Vous pouvez **convertir 1 point de Métier en 2 points de Langue**.  
 - Le MJ détermine les langues disponibles selon le monde de campagne.  
 - Certaines langues rares ou magiques peuvent coûter plus de points ou être restreintes.
+
+---
+
+## Connaissance
+- Votre **Background** vous donne **1 point de Connaissance**.
+- Vous pouvez **convertir 1 point de Métier en 2 points de Connaissance**.  
+
+| Connaissance   | Domaine                                                                 | Créatures associées                                   |
+|--------------|-------------------------------------------------------------------------|------------------------------------------------------|
+| **Arcane**   | Magie façonnée par les mortels, théories arcanes                        | Élémentaires, créatures planaires                    |
+| **Science**  | Ingénierie, mécanique, architecture, inventions et découvertes techniques | Automates, golems, créatures artificielles           |
+| **Exploration** | Survie dans les régions sauvages, orientation, dangers des donjons   | Monstres divers (bêtes, humanoïdes monstrueux)       |
+| **Géopolitique** | Organisation des cités, relations entre nations et races            | Royaumes alliés (humains, elfes, nains, halfelins, gnomes) |
+| **Guerre**   | Stratégies, batailles célèbres, héros militaires                        | Royaumes orcs, gobelins, ogres, trolls, géants       |
+| **Histoire** | Chroniques, traditions, savoir ancien                                   | Dragons, créatures antiques                          |
+| **Mystère**  | Savoirs interdits, secrets cachés, légendes obscures                    | Aberrations                                          |
+| **Nature**   | Faune, flore, géologie, climat, phénomènes naturels                     | Royaumes féeriques, animaux magiques                 |
+| **Religion** | Dieux, cultes, sectes, doctrines sacrées ou hérétiques                  | Morts-vivants, démons                                |
+
 
 ---
 
